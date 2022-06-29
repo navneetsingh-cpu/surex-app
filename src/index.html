@@ -1,13 +1,47 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>SurexApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link href="../assets/angularjs/app.css" rel="stylesheet">
+  </link>
+
 </head>
+
 <body>
+
+  <!-- Angular JS -->
+  <div ng-app="myApp" ng-controller="MyCtrl">
+
+    <div class="container app-container">
+      <!-- <h1> Angular Js Excercises</h1> -->
+
+
+      <!-- Excercise 1 -->
+      <div>
+        <label for="excercise1">Angular Js Excercise 1</label>
+        <input type="text" ng-model="phone" id="excercise1" placeholder="(987) 654-3210" ng-change="validateModel()" canada-phone>
+        <div> Model: {{validModel}}</div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
   <app-root></app-root>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script src="../assets/angularjs/app.js"></script>
 </body>
+
 </html>
