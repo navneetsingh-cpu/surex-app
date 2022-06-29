@@ -3,10 +3,10 @@ const myApp = angular.module("myApp", []);
 myApp.controller("MyCtrl", function ($scope) {
   $scope.validateModel = function name(params) {
     $scope.validModel = $scope.phone.length > 9 ? $scope.phone : null;
-    console.log("$scope.validModel", $scope.phone.charAt(0));
   };
 });
 
+// Excercise 1
 myApp.directive("canadaPhone", function ($filter, $browser) {
   return {
     require: "ngModel",
@@ -89,3 +89,5 @@ myApp.filter("tel", function () {
     }
   };
 });
+
+// Excercise 2
